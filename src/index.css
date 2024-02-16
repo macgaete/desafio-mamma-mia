@@ -1,0 +1,241 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #eee;
+    height: 100vh;
+}
+
+.baseCenter h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.baseCenter h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.baseCenter h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.baseCenter h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color: #000;
+    background-color: #fff;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    font-weight: 500;
+}
+
+a:hover {
+    color: #1d7e66;
+}
+
+.active {
+    color: #07dba6;
+}
+
+.inactive {
+    color: #f9f9f9;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b73737;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    height:40px;
+    width:40px;
+    object-fit: scale-down;
+}
+
+.pizza-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.pizza-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    margin-bottom: 20px;
+    max-width: 300px;
+    max-height: 500px;
+    box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.2);
+    border: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.pizza-card:hover{
+    box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.pizza-card h2 {
+    margin-bottom: 5px;
+}
+
+.pizza-card p {
+    color: #666;
+}
+
+button{
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+    padding: 7px 16px;
+    min-height: 36px;
+    min-width: 36px;
+    color: #ffffff;
+    background: #008060;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset;
+}
+
+button:hover {
+    background: #006e52;
+}
+
+.pizza-details{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.pizza-detail-card{
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 1300px;
+}
+
+.pizza-detail-pic{
+    max-height: 400px;
+    object-fit: scale-down;
+    max-width: 500px;
+}
+
+.pizza-card-pic{
+    height: 200px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.pizza-card-ingredients{
+    font-size: smaller;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.pizza-card-button{
+    margin: 2px;
+}
+
+.pizza-card-button-container{
+    margin-bottom: 10px;
+    gap: 5px;
+}
+
+.nav-logo{
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+}
+
+.cart-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    margin: 10px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+}
+
+.cart-item-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.cart-item-price {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.cart-item-quantity {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.cart-item-button-group{
+    display: flex;
+    gap: 10px;
+}
